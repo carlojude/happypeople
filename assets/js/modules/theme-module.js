@@ -76,8 +76,10 @@ AppName.Modules.ThemeModule = (function() {
         });
     };
 
-    var popover = function() {
-        $('[data-toggle=popover]').popover();
+    var overlay = function() {
+        $('#thumb-img').hover(function() {
+            $('.img-holder .thumbnail-overlay').toggleClass('hidden');
+        });
     }
 
     /////////////////////
@@ -85,6 +87,7 @@ AppName.Modules.ThemeModule = (function() {
     ///////////////////
     var init = function() {
         owlCarouselBottom();
+        // overlay();
     };
 
     var resize = function() {

@@ -21,15 +21,25 @@
                     font-size: 30px;
                     line-height: 50px;
                     color: white;
+                    @include respond-to("screen-xs") {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                    @include respond-to("screen-sm") {
+                        font-size: 24px;
+                        line-height: 40px;
+                    }
                 }
             }
         }
     }
     .control-holder {
+        display: table;
+        margin: auto;
         text-align: center;
         a {
+            display: table-cell;
             position: relative;
-            top: -30px;
             padding: 10px;
             color: white;
             cursor: pointer;
@@ -49,12 +59,33 @@
         background-color: white;
         border-top-left-radius: 100px;
         border-top-right-radius: 100px;
+        @include respond-to("screen-xs") {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
         .title {
             padding-left: 50px;
             font-size: 48px;
+            @include respond-to("screen-xs") {
+                padding-left: 20px;
+                font-size: 24px;
+            }
+            @include respond-to("screen-sm") {
+                padding-left: 30px;
+                font-size: 32px;
+            }
+            @include respond-to("screen-md") {
+                font-size: 40px;
+            }
         }
         .content {
-            color: #666666
+            color: #666666;
+            @include respond-to("screen-xs") {
+                font-size: 12px;
+            }
+            @include respond-to("screen-sm") {
+                font-size: 13px;
+            }
         }
     }
 }
@@ -62,6 +93,7 @@
 .home-welcome-bottom {
     padding-bottom: 30px;
     text-align: center;
+    color: white;
     .fa {
         font-size: 50px;
     }
@@ -72,14 +104,245 @@
         padding: 40px 10px;
         background-color: #3d67af;
         border-bottom-left-radius: 100px;
+        @include respond-to("screen-xs") {
+            margin-bottom: 10px;
+            border-bottom-left-radius: 0;
+        }
     }
     .mid {
         padding: 40px 10px;
         background-color: #3d67af;
+        @include respond-to("screen-xs") {
+            margin-bottom: 10px;
+        }
     }
     .right {
         padding: 40px 10px;
         background-color: #3d67af;
         border-bottom-right-radius: 100px;
+        @include respond-to("screen-xs") {
+            border-bottom-right-radius: 0;
+        }
+    }
+}
+
+.parallax {
+    background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/stopala-u-travi.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .home-midBanner {
+        padding: 50px 0;
+        text-align: center;
+        p {
+            color: white;
+            font-size: 48px;
+            line-height: 60px;
+            @include respond-to("screen-xs") {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            @include respond-to("screen-sm") {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            @include respond-to("screen-md") {
+                font-size: 40px;
+            }
+            &:before {
+                content: "";
+                border-top: 2px solid white;
+                display: table;
+                width: 110px;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+            &:after {
+                content: "";
+                border-top: 2px solid white;
+                display: table;
+                width: 110px;
+                margin: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.home-steps {
+    padding: 50px 0;
+    background-color: #aeb726;
+    h1 {
+        margin-bottom: 30px;
+        color: white;
+    }
+    .steps {
+        h2 {
+            padding-left: 40%;
+            color: white;
+            @include respond-to("screen-xs") {
+                font-size: 16px;
+            }
+            @include respond-to("screen-sm") {
+                padding-left: 30px;
+                font-size: 18px;
+            }
+        }
+    }
+    .first {
+        p {
+            padding-left: 40%;
+            color: white;
+            &:before {
+                content: "1";
+                border-radius: 50%;
+                background-color: #3a4f7a;
+                color: black;
+                display: inline-block;
+                float: left;
+                left: 40px;
+                height: 100px;
+                position: absolute;
+                line-height: 92px;
+                text-align: center;
+                width: 100px;
+                color: #FFFFFF;
+                font-size: 48px;
+                top: 21px;
+                border: 1px solid #eaeaea;
+                @include respond-to ("screen-xs") {
+                    height: 65px;
+                    line-height: 66px;
+                    width: 65px;
+                    font-size: 26px;
+                    top: 12px;
+                }
+            }
+        }
+    }
+    .second {
+        p {
+            padding-left: 40%;
+            color: white;
+            &:before {
+                content: "2";
+                border-radius: 50%;
+                background-color: #3a4f7a;
+                color: black;
+                display: inline-block;
+                float: left;
+                left: 40px;
+                height: 100px;
+                position: absolute;
+                line-height: 92px;
+                text-align: center;
+                width: 100px;
+                color: #FFFFFF;
+                font-size: 48px;
+                top: 21px;
+                border: 1px solid #eaeaea;
+                @include respond-to ("screen-xs") {
+                    height: 65px;
+                    line-height: 66px;
+                    width: 65px;
+                    font-size: 26px;
+                    top: 12px;
+                }
+            }
+        }
+    }
+    .third {
+        p {
+            padding-left: 40%;
+            color: white;
+            &:before {
+                content: "3";
+                border-radius: 50%;
+                background-color: #3a4f7a;
+                color: black;
+                display: inline-block;
+                float: left;
+                left: 40px;
+                height: 100px;
+                position: absolute;
+                line-height: 92px;
+                text-align: center;
+                width: 100px;
+                color: #FFFFFF;
+                font-size: 48px;
+                top: 21px;
+                border: 1px solid #eaeaea;
+                @include respond-to ("screen-xs") {
+                    height: 65px;
+                    line-height: 66px;
+                    width: 65px;
+                    font-size: 26px;
+                    top: 12px;
+                }
+            }
+        }
+    }
+}
+
+.home-thumbnails {
+    padding: 50px 0;
+    background-color: transparent;
+    .title {
+        margin-bottom: 30px;
+        @include respond-to ("screen-xs") {
+            margin-top: 0;
+        }
+    }
+    .row1 {
+        padding-top: 20px;
+        border-top: 2px solid white;
+    }
+    .row {
+        .img-holder {
+            img {
+                width: 100%
+            }
+        }
+    }
+    .thumbnails {
+        .img-holder {
+            position: relative;
+            transition: 0.5s;
+            .thumbnail-overlay {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                padding: 0 15px;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                p {
+                    font-size: 17px;
+                    @include respond-to ("screen-xs") {
+                        font-size: 14px;
+                    }
+                }
+                ul {
+                    padding-left: 10px;
+                    list-style: none;
+                    li {
+                        font-size: 17px;
+                        .fa-circle {
+                            color: #3d67af;
+                        }
+                    }
+                }
+            }
+        }
+        .content-holder {
+            @include respond-to ("screen-xs") {
+                text-align: center;
+            }
+            p {
+                @include respond-to ("screen-xs") {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }

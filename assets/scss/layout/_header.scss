@@ -2,26 +2,46 @@ header {
     .navbar {
         margin-top: 40px;
         height: 100px;
+        @include respond-to("screen-xs") {
+            margin-top: 20px;
+            height: 100%;
+        }
         .navbar-brand {
             padding: 0;
             img {
                 width: 180px;
                 height: 100px;
+                @include respond-to("screen-xs") {
+                    width: 140px;
+                    height: 60px;
+                }
             }
+        }
+        .icon-bar {
+            background-color: black;
         }
         .navbar-nav {
             li {
-                padding: 20px;
                 margin-right: 3px;
-                background-color: black;
-                @include on-event {
-                    background-color: #be302c;
-                }
+                // background-color: black;
+                transition: 0.3s ease-in-out;
                 a {
-                    color: white;
+                    padding: 30px;
+                    color: black;
                     font-size: 20px;
+                    transition: 0.3s ease-in-out;
                     @include on-event {
                         background-color: #be302c;
+                    }
+                    @include respond-to("screen-xs") {
+                        padding: 10px;
+                        font-size: 14px;
+                    }
+                    @include respond-to("screen-sm") {
+                        font-size: 16px;
+                    }
+                    @include respond-to("screen-md") {
+                        font-size: 18px;
                     }
                 }
             }

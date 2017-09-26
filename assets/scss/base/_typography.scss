@@ -1,0 +1,29 @@
+.title {
+    font-size: 48px;
+    @include respond-to("screen-xs") {
+        font-size: 24px;
+    }
+    @include respond-to("screen-sm") {
+        padding-left: 30px;
+        font-size: 32px;
+    }
+    @include respond-to("screen-md") {
+        font-size: 40px;
+    }
+}
+
+.inner-title {
+    margin: 10px 0;
+    font-size: 16px;
+    @include respond-to("screen-xs") {
+        font-size: 13px;
+    }
+    @include respond-to("screen-sm") {
+        padding-left: 30px;
+        font-size: 14px;
+    }
+}
+
+.content {
+    font-size: 14px;
+}
