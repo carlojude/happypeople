@@ -1,1 +1,30 @@
-header {}
+header {
+    .navbar {
+        margin-top: 40px;
+        height: 100px;
+        .navbar-brand {
+            padding: 0;
+            img {
+                width: 180px;
+                height: 100px;
+            }
+        }
+        .navbar-nav {
+            li {
+                padding: 20px;
+                margin-right: 3px;
+                background-color: black;
+                @include on-event {
+                    background-color: #be302c;
+                }
+                a {
+                    color: white;
+                    font-size: 20px;
+                    @include on-event {
+                        background-color: #be302c;
+                    }
+                }
+            }
+        }
+    }
+}

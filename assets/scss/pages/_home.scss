@@ -1,0 +1,85 @@
+.home-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/stopala-u-travi.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .owl-carousel {
+        height: 390px;
+        .owl-stage-outer {
+            height: 100%;
+            .owl-stage {
+                height: 100%;
+            }
+            .owl-item {
+                display: table;
+                height: 100%;
+                .owl-content {
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 100%;
+                    text-align: center;
+                    font-size: 30px;
+                    line-height: 50px;
+                    color: white;
+                }
+            }
+        }
+    }
+    .control-holder {
+        text-align: center;
+        a {
+            position: relative;
+            top: -30px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            i {
+                color: white;
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.home-welcome-top {
+    padding: 50px 0 20px 0;
+    .welcome-holder {
+        padding: 40px;
+        background-color: white;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        .title {
+            padding-left: 50px;
+            font-size: 48px;
+        }
+        .content {
+            color: #666666
+        }
+    }
+}
+
+.home-welcome-bottom {
+    padding-bottom: 30px;
+    text-align: center;
+    .fa {
+        font-size: 50px;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    .left {
+        padding: 40px 10px;
+        background-color: #3d67af;
+        border-bottom-left-radius: 100px;
+    }
+    .mid {
+        padding: 40px 10px;
+        background-color: #3d67af;
+    }
+    .right {
+        padding: 40px 10px;
+        background-color: #3d67af;
+        border-bottom-right-radius: 100px;
+    }
+}

@@ -26,26 +26,16 @@ AppName.Modules.ThemeModule = (function() {
                 navigation: true,
                 slideSpeed: 300,
                 paginationSpeed: 400,
-                items: 3,
+                items: 1,
                 itemsDesktop: false,
                 itemsDesktopSmall: false,
                 itemsTablet: false,
                 itemsMobile: false,
                 loop: true,
                 autoplay: true,
-                autoplayTimeout: 6000,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    992: {
-                        items: 3
-                    }
-                }
+                autoplayTimeout: 3000,
+                animateOut: 'fadeOut',
+                smartSpeed: 1000
             });
         }
         $('.slider-right').click(function() {
@@ -94,7 +84,7 @@ AppName.Modules.ThemeModule = (function() {
     // Public Methods //
     ///////////////////
     var init = function() {
-
+        owlCarouselBottom();
     };
 
     var resize = function() {
