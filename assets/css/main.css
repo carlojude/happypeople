@@ -8806,8 +8806,8 @@ header .navbar {
       height: 80px; }
       @media screen and (max-width: 767px) {
         header .navbar .navbar-brand img {
-          width: 140px;
-          height: 60px; } }
+          width: 120px;
+          height: 50px; } }
   header .navbar .icon-bar {
     background-color: black; }
   header .navbar .navbar-collapse {
@@ -9350,8 +9350,8 @@ footer {
     width: 100%; }
   .home-thumbnails .thumbnails .img-holder {
     position: relative;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out; }
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
     .home-thumbnails .thumbnails .img-holder .thumbnail-overlay {
       opacity: 0;
       position: absolute;
