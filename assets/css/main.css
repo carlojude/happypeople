@@ -8828,7 +8828,8 @@ header {
   height: 135px; }
   @media screen and (max-width: 767px) {
     header {
-      padding-top: 0; } }
+      padding-top: 0;
+      height: 75px; } }
   header .navbar {
     margin-bottom: 0; }
     @media screen and (max-width: 767px) {
@@ -8901,15 +8902,16 @@ header {
             width: 100%; }
           @media screen and (max-width: 767px) {
             header .navbar .navbar-nav li a {
-              padding: 10px;
+              padding: 5px;
               color: black;
               font-size: 14px; } }
           @media (min-width: 768px) and (max-width: 991px) {
             header .navbar .navbar-nav li a {
-              padding: 15px;
+              padding: 10px;
               font-size: 16px; } }
           @media (min-width: 992px) and (max-width: 1199px) {
             header .navbar .navbar-nav li a {
+              padding: 25px;
               font-size: 18px; } }
         @media screen and (max-width: 767px) {
           header .navbar .navbar-nav li {
@@ -9190,7 +9192,7 @@ footer.bot {
       color: #cc0000; }
       @media screen and (max-width: 767px) {
         .home-welcome-top .welcome-holder .title {
-          font-size: 24px; } }
+          font-size: 19px; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .home-welcome-top .welcome-holder .title {
           font-size: 32px; } }
@@ -9202,7 +9204,7 @@ footer.bot {
       font-size: 17px; }
       @media screen and (max-width: 767px) {
         .home-welcome-top .welcome-holder .content {
-          font-size: 13px; } }
+          font-size: 12px; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .home-welcome-top .welcome-holder .content {
           font-size: 14px; } }
@@ -9222,6 +9224,12 @@ footer.bot {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 32px; }
+    @media screen and (max-width: 767px) {
+      .home-welcome-bottom .title {
+        font-size: 24px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .home-welcome-bottom .title {
+        font-size: 28px; } }
   .home-welcome-bottom .left {
     display: table;
     padding: 40px 10px;
@@ -9234,6 +9242,12 @@ footer.bot {
         border-bottom-left-radius: 0; } }
     .home-welcome-bottom .left p {
       font-size: 18px; }
+      @media screen and (max-width: 767px) {
+        .home-welcome-bottom .left p {
+          font-size: 14px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .home-welcome-bottom .left p {
+          font-size: 16px; } }
   .home-welcome-bottom .mid {
     display: table;
     padding: 40px 10px;
@@ -9244,6 +9258,12 @@ footer.bot {
         margin-bottom: 10px; } }
     .home-welcome-bottom .mid p {
       font-size: 18px; }
+      @media screen and (max-width: 767px) {
+        .home-welcome-bottom .mid p {
+          font-size: 14px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .home-welcome-bottom .mid p {
+          font-size: 16px; } }
   .home-welcome-bottom .right {
     display: table;
     padding: 40px 10px;
@@ -9255,6 +9275,12 @@ footer.bot {
         border-bottom-right-radius: 0; } }
     .home-welcome-bottom .right p {
       font-size: 18px; }
+      @media screen and (max-width: 767px) {
+        .home-welcome-bottom .right p {
+          font-size: 14px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .home-welcome-bottom .right p {
+          font-size: 16px; } }
 
 .parallax {
   background: url("../img/5-habits-of-happy-people.jpg");

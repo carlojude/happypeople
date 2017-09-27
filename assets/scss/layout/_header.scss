@@ -3,6 +3,7 @@ header {
     height: 135px;
     @include respond-to("screen-xs") {
         padding-top: 0;
+        height: 75px;
     }
     .navbar {
         margin-bottom: 0;
@@ -80,15 +81,16 @@ header {
                         width: 100%;
                     }
                     @include respond-to("screen-xs") {
-                        padding: 10px;
+                        padding: 5px;
                         color: black;
                         font-size: 14px;
                     }
                     @include respond-to("screen-sm") {
-                        padding: 15px;
+                        padding: 10px;
                         font-size: 16px;
                     }
                     @include respond-to("screen-md") {
+                        padding: 25px;
                         font-size: 18px;
                     }
                 }
