@@ -4,7 +4,6 @@
         font-size: 24px;
     }
     @include respond-to("screen-sm") {
-        padding-left: 30px;
         font-size: 32px;
     }
     @include respond-to("screen-md") {

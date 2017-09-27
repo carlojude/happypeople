@@ -1,7 +1,8 @@
-.read-more {
+.order {
     padding: 15px 30px;
     background-color: #3d67af;
     transition: 0.3s ease-in-out;
+    color: white;
     @include on-event {
         background-color: #335894;
         color: white;
@@ -14,7 +15,7 @@
     color: white;
     transition: 0.4s ease-in-out;
     @include on-event {
-        background-color: #335894;
+        background-color: #717883;
         color: white;
     }
 }
@@ -30,5 +31,16 @@
     }
     @include respond-to("screen-xs") {
         font-size: 11px;
+    }
+}
+
+.more-products {
+    padding: 20px;
+    background-color: #3d67af;
+    color: white;
+    transition: 0.3s ease-in-out;
+    @include on-event {
+        background-color: #335894;
+        color: white;
     }
 }

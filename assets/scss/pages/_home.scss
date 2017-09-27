@@ -1,57 +1,13 @@
 .home-banner {
+    margin-top: -110px;
+    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/stopala-u-travi.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    .owl-carousel {
-        height: 390px;
-        .owl-stage-outer {
-            height: 100%;
-            .owl-stage {
-                height: 100%;
-            }
-            .owl-item {
-                display: table;
-                height: 100%;
-                .owl-content {
-                    display: table-cell;
-                    vertical-align: middle;
-                    height: 100%;
-                    text-align: center;
-                    font-size: 30px;
-                    line-height: 50px;
-                    color: white;
-                    @include respond-to("screen-xs") {
-                        font-size: 18px;
-                        line-height: 30px;
-                    }
-                    @include respond-to("screen-sm") {
-                        font-size: 24px;
-                        line-height: 40px;
-                    }
-                }
-            }
-        }
-    }
-    .control-holder {
-        display: table;
-        margin: auto;
-        text-align: center;
-        a {
-            display: table-cell;
-            position: relative;
-            padding: 10px;
-            color: white;
-            cursor: pointer;
-            i {
-                color: white;
-                font-size: 30px;
-                cursor: pointer;
-                @include respond-to("screen-xs") {
-                    font-size: 22px;
-                }
-            }
-        }
+    @include respond-to("screen-xs") {
+        margin-top: 0px;
+        height: 600px;
     }
 }
 
@@ -67,14 +23,11 @@
             border-top-right-radius: 0;
         }
         .title {
-            padding-left: 50px;
             font-size: 48px;
             @include respond-to("screen-xs") {
-                padding-left: 20px;
                 font-size: 24px;
             }
             @include respond-to("screen-sm") {
-                padding-left: 30px;
                 font-size: 32px;
             }
             @include respond-to("screen-md") {
@@ -83,11 +36,12 @@
         }
         .content {
             color: #666666;
+            font-size: 17px;
             @include respond-to("screen-xs") {
-                font-size: 12px;
+                font-size: 13px;
             }
             @include respond-to("screen-sm") {
-                font-size: 13px;
+                font-size: 14px;
             }
         }
     }
@@ -107,8 +61,10 @@
         margin-bottom: 20px;
     }
     .left {
+        display: table;
         padding: 40px 10px;
-        background-color: #3d67af;
+        width: 100%;
+        background-color: #be302c;
         border-bottom-left-radius: 100px;
         @include respond-to("screen-xs") {
             margin-bottom: 10px;
@@ -116,15 +72,19 @@
         }
     }
     .mid {
+        display: table;
         padding: 40px 10px;
-        background-color: #3d67af;
+        width: 100%;
+        background-color: #be302c;
         @include respond-to("screen-xs") {
             margin-bottom: 10px;
         }
     }
     .right {
+        display: table;
         padding: 40px 10px;
-        background-color: #3d67af;
+        width: 100%;
+        background-color: #be302c;
         border-bottom-right-radius: 100px;
         @include respond-to("screen-xs") {
             border-bottom-right-radius: 0;
@@ -133,7 +93,7 @@
 }
 
 .parallax {
-    background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/stopala-u-travi.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/5-habits-of-happy-people.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -176,175 +136,94 @@
     }
 }
 
-.home-steps {
+.home-people-say {
     padding: 50px 0;
-    background-color: #aeb726;
+    background-color: #be302c;
     h1 {
         margin-bottom: 30px;
         color: white;
     }
-    .steps {
-        h2 {
-            padding-left: 40%;
-            color: white;
-            @include respond-to("screen-xs") {
-                padding-left: 35%;
-                font-size: 16px;
+    .owl-carousel {
+        .owl-stage-outer {
+            height: 100%;
+            .owl-stage {
+                height: 100%;
             }
-            @include respond-to("screen-sm") {
-                padding-left: 35%;
-                font-size: 16px;
+            .owl-item {
+                display: table;
+                height: 100%;
+                .review {
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 100%;
+                    text-align: center;
+                    font-size: 30px;
+                    line-height: 50px;
+                    color: white;
+                    @include respond-to("screen-xs") {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                    @include respond-to("screen-sm") {
+                        font-size: 24px;
+                        line-height: 40px;
+                    }
+                    .from {
+                        p {
+                            font-size: 22px;
+                        }
+                    }
+                    .fa-quote-left {
+                        position: relative;
+                        top: -20px;
+                        margin-right: 5px;
+                        font-size: 20px;
+                        @include respond-to("screen-xs") {
+                            top: 0px;
+                        }
+                        @include respond-to("screen-sm") {
+                            top: -5px;
+                        }
+                        @include respond-to("screen-md") {
+                            top: -10px;
+                        }
+                    }
+                    .fa-quote-right {
+                        position: relative;
+                        top: -20px;
+                        margin-left: 5px;
+                        font-size: 20px;
+                        @include respond-to("screen-xs") {
+                            top: 0px;
+                        }
+                        @include respond-to("screen-sm") {
+                            top: -5px;
+                        }
+                        @include respond-to("screen-md") {
+                            top: -10px;
+                        }
+                    }
+                }
             }
         }
     }
-    .first {
-        p {
-            padding-left: 40%;
+    .control-holder {
+        display: table;
+        margin: auto;
+        text-align: center;
+        a {
+            display: table-cell;
+            position: relative;
+            padding: 10px;
             color: white;
-            &:before {
-                content: "1";
-                border-radius: 50%;
-                background-color: #3a4f7a;
-                color: black;
-                display: inline-block;
-                left: 40px;
-                height: 100px;
-                position: absolute;
-                line-height: 92px;
-                text-align: center;
-                width: 100px;
-                color: #FFFFFF;
-                font-size: 48px;
-                top: 21px;
-                border: 1px solid #eaeaea;
-                @include respond-to ("screen-xs") {
-                    height: 65px;
-                    line-height: 66px;
-                    width: 65px;
-                    font-size: 26px;
-                    top: 12px;
+            cursor: pointer;
+            i {
+                color: white;
+                font-size: 30px;
+                cursor: pointer;
+                @include respond-to("screen-xs") {
+                    font-size: 22px;
                 }
-                @include respond-to ("screen-sm") {
-                    top: 12px;
-                    height: 40px;
-                    width: 40px;
-                    font-size: 26px;
-                    line-height: 39px;
-                }
-                @include respond-to ("screen-md") {
-                    top: 12px;
-                    height: 70px;
-                    width: 70px;
-                    font-size: 40px;
-                    line-height: 69px;
-                }
-            }
-            @include respond-to("screen-xs") {
-                padding-left: 35%;
-            }
-            @include respond-to("screen-sm") {
-                padding-left: 35%;
-            }
-        }
-    }
-    .second {
-        p {
-            padding-left: 40%;
-            color: white;
-            &:before {
-                content: "2";
-                border-radius: 50%;
-                background-color: #3a4f7a;
-                color: black;
-                display: inline-block;
-                left: 40px;
-                height: 100px;
-                position: absolute;
-                line-height: 92px;
-                text-align: center;
-                width: 100px;
-                color: #FFFFFF;
-                font-size: 48px;
-                top: 21px;
-                border: 1px solid #eaeaea;
-                @include respond-to ("screen-xs") {
-                    height: 65px;
-                    line-height: 66px;
-                    width: 65px;
-                    font-size: 26px;
-                    top: 12px;
-                }
-                @include respond-to ("screen-sm") {
-                    top: 12px;
-                    height: 40px;
-                    width: 40px;
-                    font-size: 26px;
-                    line-height: 39px;
-                }
-                @include respond-to ("screen-md") {
-                    top: 12px;
-                    height: 70px;
-                    width: 70px;
-                    font-size: 40px;
-                    line-height: 69px;
-                }
-            }
-            @include respond-to("screen-xs") {
-                padding-left: 35%;
-            }
-            @include respond-to("screen-sm") {
-                padding-left: 35%;
-            }
-        }
-    }
-    .third {
-        p {
-            padding-left: 40%;
-            color: white;
-            &:before {
-                content: "3";
-                border-radius: 50%;
-                background-color: #3a4f7a;
-                color: black;
-                display: inline-block;
-                float: left;
-                left: 40px;
-                height: 100px;
-                position: absolute;
-                line-height: 92px;
-                text-align: center;
-                width: 100px;
-                color: #FFFFFF;
-                font-size: 48px;
-                top: 21px;
-                border: 1px solid #eaeaea;
-                @include respond-to ("screen-xs") {
-                    height: 65px;
-                    line-height: 66px;
-                    width: 65px;
-                    font-size: 26px;
-                    top: 12px;
-                }
-                @include respond-to ("screen-sm") {
-                    top: 12px;
-                    height: 40px;
-                    width: 40px;
-                    font-size: 26px;
-                    line-height: 39px;
-                }
-                @include respond-to ("screen-md") {
-                    top: 12px;
-                    height: 70px;
-                    width: 70px;
-                    font-size: 40px;
-                    line-height: 69px;
-                }
-            }
-            @include respond-to("screen-xs") {
-                padding-left: 35%;
-            }
-            @include respond-to("screen-sm") {
-                padding-left: 35%;
             }
         }
     }
@@ -359,14 +238,22 @@
             margin-top: 0;
         }
     }
-    .row1 {
-        padding-top: 20px;
-        border-top: 2px solid white;
+    .btn-holder {
+        margin-top: 20px;
     }
     .row {
+        padding-top: 20px;
+        border-top: 2px solid white;
         .img-holder {
             img {
-                width: 100%
+                width: 100%;
+                height: 250px;
+                @include respond-to ("screen-xs") {
+                    height: 300px;
+                }
+                @include respond-to ("screen-sm") {
+                    height: 200px;
+                }
             }
         }
     }
@@ -384,9 +271,16 @@
                 color: white;
                 transition: 0.5s ease-in-out;
                 p {
+                    text-align: justify;
                     font-size: 17px;
                     @include respond-to ("screen-xs") {
                         font-size: 14px;
+                    }
+                    &.inner-title {
+                        font-size: 20px;
+                        @include respond-to ("screen-xs") {
+                            font-size: 17px;
+                        }
                     }
                 }
                 ul {

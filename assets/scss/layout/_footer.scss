@@ -1,122 +1,156 @@
 footer {
-    background-color: black;
-    height: 100%;
-    .footer-title {
-        margin-top: 15px;
-        margin-bottom: 0;
-        color: #3d67af;
-        font-size: 16px;
-        @include respond-to("screen-xs") {
-            font-size: 12px;
+    &.top {
+        background-color: black;
+        height: 100%;
+        .social-holder {
+            margin-top: 10px;
+            .social {
+                display: inline-block;
+                margin-right: 30px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                a {
+                    color: white;
+                    transition: 0.3s;
+                    @include on-event {
+                        color: #be302c;
+                    }
+                    .fa {
+                        position: relative;
+                        top: 10px;
+                        font-size: 30px;
+                    }
+                }
+            }
         }
-        @include respond-to("screen-sm") {
-            font-size: 14px;
-        }
-    }
-    .footer-content {
-        font-size: 22px;
-        color: white;
-        @include respond-to("screen-xs") {
+        .footer-title {
+            margin-top: 15px;
+            margin-bottom: 0;
+            color: #be302c;
             font-size: 16px;
+            @include respond-to("screen-xs") {
+                font-size: 12px;
+            }
+            @include respond-to("screen-sm") {
+                font-size: 14px;
+            }
         }
-        @include respond-to("screen-sm") {
-            font-size: 18px;
+        .footer-content {
+            font-size: 22px;
+            color: white;
+            @include respond-to("screen-xs") {
+                font-size: 16px;
+            }
+            @include respond-to("screen-sm") {
+                font-size: 18px;
+            }
         }
-    }
-    .visit-us {
-        display: table;
-        margin: auto;
-        .top {
-            display: inline-block;
-            padding: 15px;
-            margin-bottom: -10px;
-            margin-right: 8px;
-            background-color: #303030;
-            border-radius: 50%;
-            .fa {
-                display: table-cell;
-                color: white;
-                font-size: 32px;
+        .visit-us {
+            display: table;
+            margin: auto;
+            .top {
+                display: inline-block;
+                padding: 15px;
+                margin-bottom: -10px;
+                margin-right: 8px;
+                background-color: #303030;
+                border-radius: 50%;
+                .fa {
+                    display: table-cell;
+                    color: white;
+                    font-size: 32px;
+                    @include respond-to("screen-xs") {
+                        font-size: 22px;
+                    }
+                    @include respond-to("screen-sm") {
+                        font-size: 26px;
+                    }
+                }
                 @include respond-to("screen-xs") {
-                    font-size: 22px;
+                    margin-left: 10px;
                 }
-                @include respond-to("screen-sm") {
-                    font-size: 26px;
-                }
+            }
+            .bottom {
+                display: inline-block;
             }
             @include respond-to("screen-xs") {
-                margin-left: 10px;
+                margin: 0;
             }
         }
-        .bottom {
-            display: inline-block;
-        }
-        @include respond-to("screen-xs") {
-            margin: 0;
-        }
-    }
-    .email-us {
-        display: table;
-        margin: auto;
-        .top {
-            display: inline-block;
-            padding: 15px;
-            margin-bottom: -10px;
-            margin-right: 8px;
-            background-color: #303030;
-            border-radius: 50%;
-            .fa {
-                display: table-cell;
-                color: white;
-                font-size: 32px;
+        .email-us {
+            display: table;
+            margin: auto;
+            .top {
+                display: inline-block;
+                padding: 15px;
+                margin-bottom: -10px;
+                margin-right: 8px;
+                background-color: #303030;
+                border-radius: 50%;
+                .fa {
+                    display: table-cell;
+                    color: white;
+                    font-size: 32px;
+                    @include respond-to("screen-xs") {
+                        font-size: 22px;
+                    }
+                    @include respond-to("screen-sm") {
+                        font-size: 26px;
+                    }
+                }
                 @include respond-to("screen-xs") {
-                    font-size: 22px;
+                    margin-left: 10px;
                 }
-                @include respond-to("screen-sm") {
-                    font-size: 26px;
-                }
+            }
+            .bottom {
+                display: inline-block;
             }
             @include respond-to("screen-xs") {
-                margin-left: 10px;
+                margin: 0;
             }
         }
-        .bottom {
-            display: inline-block;
-        }
-        @include respond-to("screen-xs") {
-            margin: 0;
-        }
-    }
-    .call-us {
-        display: table;
-        margin: auto;
-        .top {
-            display: inline-block;
-            padding: 15px;
-            margin-bottom: -10px;
-            margin-right: 8px;
-            background-color: #303030;
-            border-radius: 50%;
-            .fa {
-                display: table-cell;
-                color: white;
-                font-size: 32px;
+        .call-us {
+            display: table;
+            margin: auto;
+            .top {
+                display: inline-block;
+                padding: 15px;
+                margin-bottom: -10px;
+                margin-right: 8px;
+                background-color: #303030;
+                border-radius: 50%;
+                .fa {
+                    display: table-cell;
+                    color: white;
+                    font-size: 32px;
+                    @include respond-to("screen-xs") {
+                        font-size: 22px;
+                    }
+                    @include respond-to("screen-sm") {
+                        font-size: 26px;
+                    }
+                }
                 @include respond-to("screen-xs") {
-                    font-size: 22px;
+                    margin-left: 10px;
                 }
-                @include respond-to("screen-sm") {
-                    font-size: 26px;
-                }
+            }
+            .bottom {
+                display: inline-block;
             }
             @include respond-to("screen-xs") {
-                margin-left: 10px;
+                margin: 0;
             }
         }
-        .bottom {
-            display: inline-block;
-        }
-        @include respond-to("screen-xs") {
-            margin: 0;
+    }
+    &.bot {
+        background-color: #f2f2f2;
+        .footer-bottom {
+            padding: 10px 0;
+            text-align: center;
+            p {
+                margin-bottom: 0;
+            }
         }
     }
 }
