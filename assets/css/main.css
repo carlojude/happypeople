@@ -8852,7 +8852,8 @@ header {
             transition: width .3s; }
         header .navbar .navbar-nav li a:after {
           content: '';
-          display: block;
+          display: table;
+          margin: auto;
           position: relative;
           top: 8px;
           width: 0;
@@ -9041,6 +9042,24 @@ footer.top {
 
 footer.bot {
   background-color: #f2f2f2; }
+  footer.bot .social-holder {
+    margin-top: 10px; }
+    footer.bot .social-holder .social {
+      display: inline-block;
+      margin-right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; }
+      footer.bot .social-holder .social a {
+        color: #be302c;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+        footer.bot .social-holder .social a:hover, footer.bot .social-holder .social a:active, footer.bot .social-holder .social a:focus {
+          color: #be302c; }
+        footer.bot .social-holder .social a .fa {
+          position: relative;
+          top: 10px;
+          font-size: 30px; }
   footer.bot .footer-bottom {
     padding: 10px 0;
     text-align: center; }

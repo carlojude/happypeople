@@ -61,7 +61,8 @@ header {
                     }
                     &:after {
                         content: '';
-                        display: block;
+                        display: table;
+                        margin: auto;
                         position: relative;
                         top: 8px;
                         width: 0;

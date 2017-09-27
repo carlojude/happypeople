@@ -25,7 +25,7 @@ AppName.Modules.ThemeModule = (function() {
             owl.owlCarousel({
                 navigation: true,
                 slideSpeed: 300,
-                paginationSpeed: 400,
+                paginationSpeed: 1000,
                 items: 1,
                 itemsDesktop: false,
                 itemsDesktopSmall: false,
