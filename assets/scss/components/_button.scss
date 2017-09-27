@@ -39,6 +39,7 @@
     background-color: #3d67af;
     color: white;
     transition: 0.3s ease-in-out;
+    font-weight: 700;
     @include on-event {
         background-color: #335894;
         color: white;

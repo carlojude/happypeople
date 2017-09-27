@@ -14,7 +14,7 @@ footer {
                     color: white;
                     transition: 0.3s;
                     @include on-event {
-                        color: #be302c;
+                        color: #cc0000;
                     }
                     .fa {
                         position: relative;
@@ -27,7 +27,7 @@ footer {
         .footer-title {
             margin-top: 15px;
             margin-bottom: 0;
-            color: #be302c;
+            color: #cc0000;
             font-size: 16px;
             @include respond-to("screen-xs") {
                 font-size: 12px;
@@ -37,6 +37,7 @@ footer {
             }
         }
         .footer-content {
+            margin-bottom: 15px;
             font-size: 22px;
             color: white;
             @include respond-to("screen-xs") {
@@ -154,10 +155,10 @@ footer {
                 height: 50px;
                 border-radius: 50%;
                 a {
-                    color: #be302c;
+                    color: #cc0000;
                     transition: 0.3s;
                     @include on-event {
-                        color: #be302c;
+                        color: #cc0000;
                     }
                     .fa {
                         position: relative;

@@ -8719,7 +8719,7 @@ button.close {
 
 body {
   background-color: #f2f2f2;
-  font-family: 'Coda', cursive;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
   line-height: 28px; }
 
@@ -8730,8 +8730,37 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: "Archer Bold";
+  src: url("../fonts/archer-bold.eot");
+  src: url("../fonts/archer-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/archer-bold.woff") format("woff"), url("../fonts/archer-bold.ttf") format("truetype"), url("../fonts/archer-bold.svg#archer-bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Archer Bold Pro";
+  src: url("../fonts/Archer-Bold-Pro.eot");
+  src: url("../fonts/Archer-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Archer-Bold-Pro.woff") format("woff"), url("../fonts/Archer-Bold-Pro.ttf") format("truetype"), url("../fonts/Archer-Bold-Pro.svg#Archer-Bold-Pro") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Archer Pro Ital";
+  src: url("../fonts/Archer-BookItal-Pro.eot");
+  src: url("../fonts/Archer-BookItal-Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Archer-BookItal-Pro.woff") format("woff"), url("../fonts/Archer-BookItal-Pro.ttf") format("truetype"), url("../fonts/Archer-BookItal-Pro.svg#Archer-BookItal-Pro") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Archer Book Pro";
+  src: url("../fonts/Archer-Book-Pro.eot");
+  src: url("../fonts/Archer-Book-Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Archer-Book-Pro.woff") format("woff"), url("../fonts/Archer-Book-Pro.ttf") format("truetype"), url("../fonts/Archer-Book-Pro.svg#Archer-Book-Pro") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .title {
-  font-size: 48px; }
+  font-size: 42px;
+  font-family: 'Archer Bold Pro'; }
   @media screen and (max-width: 767px) {
     .title {
       font-size: 24px; } }
@@ -8756,7 +8785,8 @@ body {
 
 .inner-title {
   margin: 10px 0;
-  font-size: 16px; }
+  font-size: 18px;
+  font-weight: 700; }
   @media screen and (max-width: 767px) {
     .inner-title {
       font-size: 13px; } }
@@ -8794,7 +8824,8 @@ body {
   display: block; }
 
 header {
-  padding-top: 30px; }
+  padding-top: 30px;
+  height: 135px; }
   @media screen and (max-width: 767px) {
     header {
       padding-top: 0; } }
@@ -8806,8 +8837,8 @@ header {
     header .navbar .navbar-brand {
       padding: 0; }
       header .navbar .navbar-brand img {
-        width: 140px;
-        height: 80px; }
+        width: 200px;
+        height: 120px; }
         @media screen and (max-width: 767px) {
           header .navbar .navbar-brand img {
             width: 120px;
@@ -8821,65 +8852,68 @@ header {
         header .navbar .navbar-collapse {
           margin-top: 70px;
           border-top: 1px solid #eaeaea; } }
-    header .navbar .navbar-nav li {
-      margin-right: 3px;
-      background-color: transparent;
-      -webkit-transition: 0.3s ease-in-out;
-      transition: 0.3s ease-in-out; }
-      header .navbar .navbar-nav li.active {
-        background-color: transparent; }
-      header .navbar .navbar-nav li a {
-        padding: 30px;
-        color: white;
-        font-size: 18px; }
-        header .navbar .navbar-nav li a:focus {
-          background-color: transparent;
-          -webkit-box-shadow: none;
-                  box-shadow: none; }
-        header .navbar .navbar-nav li a.active {
-          background-color: transparent;
-          -webkit-box-shadow: none;
-                  box-shadow: none; }
-          header .navbar .navbar-nav li a.active:after {
+    header .navbar .navbar-nav {
+      padding-top: 20px; }
+      header .navbar .navbar-nav li {
+        margin-right: 3px;
+        background-color: transparent;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        header .navbar .navbar-nav li.active {
+          background-color: transparent; }
+        header .navbar .navbar-nav li a {
+          padding: 30px;
+          color: white;
+          font-size: 18px;
+          font-weight: 700; }
+          header .navbar .navbar-nav li a:focus {
+            background-color: transparent;
+            -webkit-box-shadow: none;
+                    box-shadow: none; }
+          header .navbar .navbar-nav li a.active {
+            background-color: transparent;
+            -webkit-box-shadow: none;
+                    box-shadow: none; }
+            header .navbar .navbar-nav li a.active:after {
+              content: '';
+              display: block;
+              position: relative;
+              top: 8px;
+              width: 100%;
+              height: 3px;
+              background: #be302c;
+              -webkit-transition: width .3s;
+              transition: width .3s; }
+          header .navbar .navbar-nav li a:after {
             content: '';
-            display: block;
+            display: table;
+            margin: auto;
             position: relative;
             top: 8px;
-            width: 100%;
+            width: 0;
             height: 2px;
             background: #be302c;
             -webkit-transition: width .3s;
             transition: width .3s; }
-        header .navbar .navbar-nav li a:after {
-          content: '';
-          display: table;
-          margin: auto;
-          position: relative;
-          top: 8px;
-          width: 0;
-          height: 2px;
-          background: #be302c;
-          -webkit-transition: width .3s;
-          transition: width .3s; }
-        header .navbar .navbar-nav li a:hover {
-          background-color: transparent; }
-        header .navbar .navbar-nav li a:hover:after {
-          width: 100%; }
+          header .navbar .navbar-nav li a:hover {
+            background-color: transparent; }
+          header .navbar .navbar-nav li a:hover:after {
+            width: 100%; }
+          @media screen and (max-width: 767px) {
+            header .navbar .navbar-nav li a {
+              padding: 10px;
+              color: black;
+              font-size: 14px; } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            header .navbar .navbar-nav li a {
+              padding: 15px;
+              font-size: 16px; } }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            header .navbar .navbar-nav li a {
+              font-size: 18px; } }
         @media screen and (max-width: 767px) {
-          header .navbar .navbar-nav li a {
-            padding: 10px;
-            color: black;
-            font-size: 14px; } }
-        @media (min-width: 768px) and (max-width: 991px) {
-          header .navbar .navbar-nav li a {
-            padding: 15px;
-            font-size: 16px; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          header .navbar .navbar-nav li a {
-            font-size: 18px; } }
-      @media screen and (max-width: 767px) {
-        header .navbar .navbar-nav li {
-          background-color: transparent; } }
+          header .navbar .navbar-nav li {
+            background-color: transparent; } }
 
 .affix {
   padding-top: 10px;
@@ -8930,7 +8964,7 @@ footer.top {
         -webkit-transition: 0.3s;
         transition: 0.3s; }
         footer.top .social-holder .social a:hover, footer.top .social-holder .social a:active, footer.top .social-holder .social a:focus {
-          color: #be302c; }
+          color: #cc0000; }
         footer.top .social-holder .social a .fa {
           position: relative;
           top: 10px;
@@ -8938,7 +8972,7 @@ footer.top {
   footer.top .footer-title {
     margin-top: 15px;
     margin-bottom: 0;
-    color: #be302c;
+    color: #cc0000;
     font-size: 16px; }
     @media screen and (max-width: 767px) {
       footer.top .footer-title {
@@ -8947,6 +8981,7 @@ footer.top {
       footer.top .footer-title {
         font-size: 14px; } }
   footer.top .footer-content {
+    margin-bottom: 15px;
     font-size: 22px;
     color: white; }
     @media screen and (max-width: 767px) {
@@ -9051,11 +9086,11 @@ footer.bot {
       height: 50px;
       border-radius: 50%; }
       footer.bot .social-holder .social a {
-        color: #be302c;
+        color: #cc0000;
         -webkit-transition: 0.3s;
         transition: 0.3s; }
         footer.bot .social-holder .social a:hover, footer.bot .social-holder .social a:active, footer.bot .social-holder .social a:focus {
-          color: #be302c; }
+          color: #cc0000; }
         footer.bot .social-holder .social a .fa {
           position: relative;
           top: 10px;
@@ -9119,26 +9154,27 @@ footer.bot {
   background-color: #3d67af;
   color: white;
   -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out; }
+  transition: 0.3s ease-in-out;
+  font-weight: 700; }
   .more-products:hover, .more-products:active, .more-products:focus {
     background-color: #335894;
     color: white; }
 
 .home-banner {
-  margin-top: -110px;
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url("../img/stopala-u-travi.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/stopala-u-travi.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 50px; }
   @media screen and (max-width: 767px) {
     .home-banner {
       margin-top: 0px;
       height: 600px; } }
 
 .home-welcome-top {
-  padding: 50px 0 20px 0; }
+  padding: 40px 0 20px 0; }
   .home-welcome-top .welcome-holder {
     padding: 40px;
     background-color: white;
@@ -9149,7 +9185,9 @@ footer.bot {
         border-top-left-radius: 0;
         border-top-right-radius: 0; } }
     .home-welcome-top .welcome-holder .title {
-      font-size: 48px; }
+      font-family: 'Fontdiner Swanky', cursive;
+      font-size: 48px;
+      color: #cc0000; }
       @media screen and (max-width: 767px) {
         .home-welcome-top .welcome-holder .title {
           font-size: 24px; } }
@@ -9160,7 +9198,7 @@ footer.bot {
         .home-welcome-top .welcome-holder .title {
           font-size: 40px; } }
     .home-welcome-top .welcome-holder .content {
-      color: #666666;
+      color: black;
       font-size: 17px; }
       @media screen and (max-width: 767px) {
         .home-welcome-top .welcome-holder .content {
@@ -9179,49 +9217,59 @@ footer.bot {
       .home-welcome-bottom .fa {
         font-size: 40px; } }
   .home-welcome-bottom .title {
-    margin-bottom: 20px; }
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px; }
   .home-welcome-bottom .left {
     display: table;
     padding: 40px 10px;
     width: 100%;
-    background-color: #be302c;
+    background-color: #cc0000;
     border-bottom-left-radius: 100px; }
     @media screen and (max-width: 767px) {
       .home-welcome-bottom .left {
         margin-bottom: 10px;
         border-bottom-left-radius: 0; } }
+    .home-welcome-bottom .left p {
+      font-size: 18px; }
   .home-welcome-bottom .mid {
     display: table;
     padding: 40px 10px;
     width: 100%;
-    background-color: #be302c; }
+    background-color: #ff5b58; }
     @media screen and (max-width: 767px) {
       .home-welcome-bottom .mid {
         margin-bottom: 10px; } }
+    .home-welcome-bottom .mid p {
+      font-size: 18px; }
   .home-welcome-bottom .right {
     display: table;
     padding: 40px 10px;
     width: 100%;
-    background-color: #be302c;
+    background-color: #cc0000;
     border-bottom-right-radius: 100px; }
     @media screen and (max-width: 767px) {
       .home-welcome-bottom .right {
         border-bottom-right-radius: 0; } }
+    .home-welcome-bottom .right p {
+      font-size: 18px; }
 
 .parallax {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url("../img/5-habits-of-happy-people.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/5-habits-of-happy-people.jpg");
+  background: url("../img/5-habits-of-happy-people.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   .parallax .home-midBanner {
-    padding: 50px 0;
+    padding: 150px 0;
     text-align: center; }
     .parallax .home-midBanner p {
       color: white;
       font-size: 48px;
-      line-height: 60px; }
+      line-height: 60px;
+      font-weight: 700; }
       @media screen and (max-width: 767px) {
         .parallax .home-midBanner p {
           font-size: 24px;
@@ -9239,21 +9287,22 @@ footer.bot {
         display: table;
         width: 110px;
         margin: auto;
-        margin-bottom: 30px; }
+        margin-bottom: 60px; }
       .parallax .home-midBanner p:after {
         content: "";
         border-top: 2px solid white;
         display: table;
         width: 110px;
         margin: auto;
-        margin-top: 30px; }
+        margin-top: 60px; }
 
 .home-people-say {
   padding: 50px 0;
-  background-color: #be302c; }
+  background-color: #cc0000; }
   .home-people-say h1 {
-    margin-bottom: 30px;
-    color: white; }
+    margin-bottom: 42px;
+    color: white;
+    font-family: 'Archer Bold'; }
   .home-people-say .owl-carousel .owl-stage-outer {
     height: 100%; }
     .home-people-say .owl-carousel .owl-stage-outer .owl-stage {
@@ -9266,9 +9315,10 @@ footer.bot {
         vertical-align: middle;
         height: 100%;
         text-align: center;
-        font-size: 30px;
+        font-size: 26px;
         line-height: 50px;
-        color: white; }
+        color: white;
+        font-family: 'Archer Pro Ital'; }
         @media screen and (max-width: 767px) {
           .home-people-say .owl-carousel .owl-stage-outer .owl-item .review {
             font-size: 18px;

@@ -1,10 +1,10 @@
 .home-banner {
-    margin-top: -110px;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/stopala-u-travi.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 50px;
     @include respond-to("screen-xs") {
         margin-top: 0px;
         height: 600px;
@@ -12,7 +12,7 @@
 }
 
 .home-welcome-top {
-    padding: 50px 0 20px 0;
+    padding: 40px 0 20px 0;
     .welcome-holder {
         padding: 40px;
         background-color: white;
@@ -23,7 +23,9 @@
             border-top-right-radius: 0;
         }
         .title {
+            font-family: 'Fontdiner Swanky', cursive;
             font-size: 48px;
+            color: #cc0000;
             @include respond-to("screen-xs") {
                 font-size: 24px;
             }
@@ -35,7 +37,7 @@
             }
         }
         .content {
-            color: #666666;
+            color: black;
             font-size: 17px;
             @include respond-to("screen-xs") {
                 font-size: 13px;
@@ -58,53 +60,67 @@
         }
     }
     .title {
-        margin-bottom: 20px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
     }
     .left {
         display: table;
         padding: 40px 10px;
         width: 100%;
-        background-color: #be302c;
+        background-color: #cc0000;
         border-bottom-left-radius: 100px;
         @include respond-to("screen-xs") {
             margin-bottom: 10px;
             border-bottom-left-radius: 0;
+        }
+        p {
+            font-size: 18px;
         }
     }
     .mid {
         display: table;
         padding: 40px 10px;
         width: 100%;
-        background-color: #be302c;
+        background-color: #ff5b58;
         @include respond-to("screen-xs") {
             margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
         }
     }
     .right {
         display: table;
         padding: 40px 10px;
         width: 100%;
-        background-color: #be302c;
+        background-color: #cc0000;
         border-bottom-right-radius: 100px;
         @include respond-to("screen-xs") {
             border-bottom-right-radius: 0;
+        }
+        p {
+            font-size: 18px;
         }
     }
 }
 
 .parallax {
-    background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/5-habits-of-happy-people.jpg');
+    background: url('../img/5-habits-of-happy-people.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .home-midBanner {
-        padding: 50px 0;
+        padding: 150px 0;
         text-align: center;
         p {
             color: white;
             font-size: 48px;
             line-height: 60px;
+            font-weight: 700;
             @include respond-to("screen-xs") {
                 font-size: 24px;
                 line-height: 30px;
@@ -122,7 +138,7 @@
                 display: table;
                 width: 110px;
                 margin: auto;
-                margin-bottom: 30px;
+                margin-bottom: 60px;
             }
             &:after {
                 content: "";
@@ -130,7 +146,7 @@
                 display: table;
                 width: 110px;
                 margin: auto;
-                margin-top: 30px;
+                margin-top: 60px;
             }
         }
     }
@@ -138,10 +154,11 @@
 
 .home-people-say {
     padding: 50px 0;
-    background-color: #be302c;
+    background-color: #cc0000;
     h1 {
-        margin-bottom: 30px;
+        margin-bottom: 42px;
         color: white;
+        font-family: 'Archer Bold';
     }
     .owl-carousel {
         .owl-stage-outer {
@@ -157,9 +174,10 @@
                     vertical-align: middle;
                     height: 100%;
                     text-align: center;
-                    font-size: 30px;
+                    font-size: 26px;
                     line-height: 50px;
                     color: white;
+                    font-family: 'Archer Pro Ital';
                     @include respond-to("screen-xs") {
                         font-size: 18px;
                         line-height: 30px;

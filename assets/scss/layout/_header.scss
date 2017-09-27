@@ -1,5 +1,6 @@
 header {
     padding-top: 30px;
+    height: 135px;
     @include respond-to("screen-xs") {
         padding-top: 0;
     }
@@ -11,8 +12,8 @@ header {
         .navbar-brand {
             padding: 0;
             img {
-                width: 140px;
-                height: 80px;
+                width: 200px;
+                height: 120px;
                 @include respond-to("screen-xs") {
                     width: 120px;
                     height: 50px;
@@ -30,6 +31,7 @@ header {
             }
         }
         .navbar-nav {
+            padding-top: 20px;
             li {
                 margin-right: 3px;
                 background-color: transparent;
@@ -41,6 +43,7 @@ header {
                     padding: 30px;
                     color: white;
                     font-size: 18px;
+                    font-weight: 700;
                     &:focus {
                         background-color: transparent;
                         box-shadow: none;
@@ -54,7 +57,7 @@ header {
                             position: relative;
                             top: 8px;
                             width: 100%;
-                            height: 2px;
+                            height: 3px;
                             background: #be302c;
                             transition: width .3s;
                         }

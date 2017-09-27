@@ -1,1 +1,5 @@
 @include font-face($text-fontawesome, $base-url, 'font-awesome', 'font-awesome');
+@include font-face('Archer Bold', $base-url, 'archer-bold', 'archer-bold');
+@include font-face('Archer Bold Pro', $base-url, 'Archer-Bold-Pro', 'Archer-Bold-Pro');
+@include font-face('Archer Pro Ital', $base-url, 'Archer-BookItal-Pro', 'Archer-BookItal-Pro');
+@include font-face('Archer Book Pro', $base-url, 'Archer-Book-Pro', 'Archer-Book-Pro');
