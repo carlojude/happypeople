@@ -8992,7 +8992,12 @@ footer {
 
 .read-more {
   padding: 15px 30px;
-  background-color: #3d67af; }
+  background-color: #3d67af;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .read-more:hover, .read-more:active, .read-more:focus {
+    background-color: #335894;
+    color: white; }
 
 .claim {
   margin-bottom: 10px;

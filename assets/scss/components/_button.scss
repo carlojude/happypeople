@@ -1,6 +1,11 @@
 .read-more {
     padding: 15px 30px;
     background-color: #3d67af;
+    transition: 0.3s ease-in-out;
+    @include on-event {
+        background-color: #335894;
+        color: white;
+    }
 }
 
 .claim {

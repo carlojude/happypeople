@@ -83,6 +83,16 @@ AppName.Modules.ThemeModule = (function() {
         });
     }
 
+    var fadeEffects = function() {
+        if ($(window).width() < 768) {
+
+        } else {
+            $(window).fadeThis({
+                distance: 10
+            });
+        }
+
+    }
 
     /////////////////////
     // Public Methods //
@@ -90,6 +100,7 @@ AppName.Modules.ThemeModule = (function() {
     var init = function() {
         owlCarouselBottom();
         offer();
+        fadeEffects();
     };
 
     var resize = function() {
