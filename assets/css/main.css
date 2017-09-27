@@ -8826,12 +8826,20 @@ header {
       background-color: transparent;
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out; }
+      header .navbar .navbar-nav li.active {
+        background-color: transparent; }
       header .navbar .navbar-nav li a {
         padding: 30px;
         color: white;
         font-size: 18px; }
+        header .navbar .navbar-nav li a:focus {
+          background-color: transparent;
+          -webkit-box-shadow: none;
+                  box-shadow: none; }
         header .navbar .navbar-nav li a.active {
-          background-color: transparent; }
+          background-color: transparent;
+          -webkit-box-shadow: none;
+                  box-shadow: none; }
           header .navbar .navbar-nav li a.active:after {
             content: '';
             display: block;
@@ -8884,8 +8892,26 @@ header {
     .affix .navbar .navbar-brand img {
       width: 100px;
       height: 50px; } }
-  .affix .navbar .navbar-nav li a {
-    color: black; }
+  .affix .navbar .navbar-nav li {
+    background-color: transparent; }
+    .affix .navbar .navbar-nav li:active {
+      background-color: white;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .affix .navbar .navbar-nav li:focus {
+      background-color: white;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .affix .navbar .navbar-nav li a {
+      color: black; }
+      .affix .navbar .navbar-nav li a:active {
+        background-color: white;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+      .affix .navbar .navbar-nav li a:focus {
+        background-color: white;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
 
 footer.top {
   background-color: black;
