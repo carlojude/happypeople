@@ -2,3 +2,28 @@
     padding: 15px 30px;
     background-color: #3d67af;
 }
+
+.claim {
+    margin-bottom: 10px;
+    background-color: #3d67af;
+    color: white;
+    transition: 0.4s ease-in-out;
+    @include on-event {
+        background-color: #335894;
+        color: white;
+    }
+}
+
+.continue {
+    margin-bottom: 20px;
+    background-color: #727272;
+    color: white;
+    transition: 0.4s ease-in-out;
+    @include on-event {
+        background-color: #494949;
+        color: white;
+    }
+    @include respond-to("screen-xs") {
+        font-size: 11px;
+    }
+}

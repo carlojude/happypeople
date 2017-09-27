@@ -6,10 +6,22 @@ footer {
         margin-bottom: 0;
         color: #3d67af;
         font-size: 16px;
+        @include respond-to("screen-xs") {
+            font-size: 12px;
+        }
+        @include respond-to("screen-sm") {
+            font-size: 14px;
+        }
     }
     .footer-content {
         font-size: 22px;
         color: white;
+        @include respond-to("screen-xs") {
+            font-size: 16px;
+        }
+        @include respond-to("screen-sm") {
+            font-size: 18px;
+        }
     }
     .visit-us {
         display: table;
@@ -25,10 +37,22 @@ footer {
                 display: table-cell;
                 color: white;
                 font-size: 32px;
+                @include respond-to("screen-xs") {
+                    font-size: 22px;
+                }
+                @include respond-to("screen-sm") {
+                    font-size: 26px;
+                }
+            }
+            @include respond-to("screen-xs") {
+                margin-left: 10px;
             }
         }
         .bottom {
             display: inline-block;
+        }
+        @include respond-to("screen-xs") {
+            margin: 0;
         }
     }
     .email-us {
@@ -45,10 +69,22 @@ footer {
                 display: table-cell;
                 color: white;
                 font-size: 32px;
+                @include respond-to("screen-xs") {
+                    font-size: 22px;
+                }
+                @include respond-to("screen-sm") {
+                    font-size: 26px;
+                }
+            }
+            @include respond-to("screen-xs") {
+                margin-left: 10px;
             }
         }
         .bottom {
             display: inline-block;
+        }
+        @include respond-to("screen-xs") {
+            margin: 0;
         }
     }
     .call-us {
@@ -65,10 +101,22 @@ footer {
                 display: table-cell;
                 color: white;
                 font-size: 32px;
+                @include respond-to("screen-xs") {
+                    font-size: 22px;
+                }
+                @include respond-to("screen-sm") {
+                    font-size: 26px;
+                }
+            }
+            @include respond-to("screen-xs") {
+                margin-left: 10px;
             }
         }
         .bottom {
             display: inline-block;
+        }
+        @include respond-to("screen-xs") {
+            margin: 0;
         }
     }
 }

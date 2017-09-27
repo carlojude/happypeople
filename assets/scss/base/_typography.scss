@@ -12,6 +12,22 @@
     }
 }
 
+.home-welcome-bottom {
+    .title {
+        padding-left: 0;
+        @include respond-to("screen-xs") {
+            font-size: 22px;
+        }
+        @include respond-to("screen-sm") {
+            font-size: 26px;
+        }
+        @include respond-to("screen-md") {
+            font-size: 36px;
+        }
+    }
+    p {}
+}
+
 .inner-title {
     margin: 10px 0;
     font-size: 16px;

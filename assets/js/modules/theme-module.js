@@ -76,18 +76,20 @@ AppName.Modules.ThemeModule = (function() {
         });
     };
 
-    var overlay = function() {
-        $('#thumb-img').hover(function() {
-            $('.img-holder .thumbnail-overlay').toggleClass('hidden');
+    var offer = function() {
+        $(window).load(function() {
+            var showModal = $('.modal').modal('show');
+            setTimeout(showModal, 5000);
         });
     }
+
 
     /////////////////////
     // Public Methods //
     ///////////////////
     var init = function() {
         owlCarouselBottom();
-        // overlay();
+        offer();
     };
 
     var resize = function() {
