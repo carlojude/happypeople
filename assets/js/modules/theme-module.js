@@ -99,7 +99,7 @@ AppName.Modules.ThemeModule = (function() {
             target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
             if (target.length) {
                 $('html,body').animate({
-                    scrollTop: target.offset().top - 120
+                    scrollTop: target.offset().top - 55
                 }, 1000);
                 return false;
             }

@@ -24,7 +24,6 @@
         }
         .title {
             font-family: 'Fontdiner Swanky', cursive;
-            font-size: 48px;
             color: #cc0000;
             @include respond-to("screen-xs") {
                 font-size: 19px;
@@ -38,7 +37,6 @@
         }
         .content {
             color: black;
-            font-size: 17px;
             @include respond-to("screen-xs") {
                 font-size: 12px;
             }
@@ -54,7 +52,7 @@
     text-align: center;
     color: white;
     .fa {
-        font-size: 50px;
+        font-size: 40px;
         @include respond-to("screen-sm") {
             font-size: 40px;
         }
@@ -64,13 +62,6 @@
         margin-bottom: 10px;
         font-family: 'Noto Sans', sans-serif;
         font-weight: 700;
-        font-size: 32px;
-        @include respond-to("screen-xs") {
-            font-size: 24px;
-        }
-        @include respond-to("screen-sm") {
-            font-size: 28px;
-        }
     }
     .left {
         display: table;
@@ -82,15 +73,6 @@
             margin-bottom: 10px;
             border-bottom-left-radius: 0;
         }
-        p {
-            font-size: 18px;
-            @include respond-to("screen-xs") {
-                font-size: 14px;
-            }
-            @include respond-to("screen-sm") {
-                font-size: 16px;
-            }
-        }
     }
     .mid {
         display: table;
@@ -99,15 +81,6 @@
         background-color: #ff5b58;
         @include respond-to("screen-xs") {
             margin-bottom: 10px;
-        }
-        p {
-            font-size: 18px;
-            @include respond-to("screen-xs") {
-                font-size: 14px;
-            }
-            @include respond-to("screen-sm") {
-                font-size: 16px;
-            }
         }
     }
     .right {
@@ -120,13 +93,7 @@
             border-bottom-right-radius: 0;
         }
         p {
-            font-size: 18px;
-            @include respond-to("screen-xs") {
-                font-size: 14px;
-            }
-            @include respond-to("screen-sm") {
-                font-size: 16px;
-            }
+            font-size: 13px;
         }
     }
 }
@@ -142,7 +109,7 @@
         text-align: center;
         p {
             color: white;
-            font-size: 48px;
+            font-size: 42px;
             line-height: 60px;
             font-weight: 700;
             @include respond-to("screen-xs") {
@@ -198,7 +165,7 @@
                     vertical-align: middle;
                     height: 100%;
                     text-align: center;
-                    font-size: 26px;
+                    font-size: 17px;
                     line-height: 50px;
                     color: white;
                     font-family: 'Archer Pro Ital';
@@ -212,14 +179,14 @@
                     }
                     .from {
                         p {
-                            font-size: 22px;
+                            font-size: 16px;
                         }
                     }
                     .fa-quote-left {
                         position: relative;
                         top: -20px;
                         margin-right: 5px;
-                        font-size: 20px;
+                        font-size: 16px;
                         @include respond-to("screen-xs") {
                             top: 0px;
                         }
@@ -234,7 +201,7 @@
                         position: relative;
                         top: -20px;
                         margin-left: 5px;
-                        font-size: 20px;
+                        font-size: 16px;
                         @include respond-to("screen-xs") {
                             top: 0px;
                         }
@@ -280,16 +247,13 @@
             margin-top: 0;
         }
     }
-    .btn-holder {
-        margin-top: 20px;
-    }
     .row {
         padding-top: 20px;
         border-top: 2px solid white;
         .img-holder {
             img {
                 width: 100%;
-                height: 250px;
+                height: 200px;
                 @include respond-to ("screen-xs") {
                     height: 300px;
                 }
@@ -314,14 +278,14 @@
                 transition: 0.5s ease-in-out;
                 p {
                     text-align: justify;
-                    font-size: 17px;
+                    font-size: 14px;
                     @include respond-to ("screen-xs") {
                         font-size: 14px;
                     }
                     &.inner-title {
-                        font-size: 20px;
+                        font-size: 14px;
                         @include respond-to ("screen-xs") {
-                            font-size: 17px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -360,21 +324,46 @@
         .modal-header {
             border: none;
             img {
-                height: 50px;
+                height: 30px;
             }
         }
         .modal-body {
             .save {
                 font-weight: 700;
+                @include respond-to ("screen-xs") {
+                    font-size: 24px;
+                }
+            }
+            .content-top {
+                margin-bottom: 0;
+                @include respond-to ("screen-xs") {
+                    font-size: 12px;
+                }
             }
             .content-bot-1 {
                 margin-bottom: 0;
+                @include respond-to ("screen-xs") {
+                    font-size: 12px;
+                }
             }
             .content-bot-2 {
                 margin-bottom: 20px;
+                @include respond-to ("screen-xs") {
+                    font-size: 12px;
+                }
             }
             img {
                 width: 100%;
+                height: 80%;
+                @include respond-to ("screen-xs") {
+                    height: 200px;
+                }
+                @include respond-to ("screen-sm") {
+                    height: 230px;
+                }
+                @include respond-to ("screen-md") {
+                    height: 250px;
+                }
             }
         }
     }
