@@ -8797,6 +8797,24 @@ body {
 .content {
   font-size: 14px; }
 
+.parallax .content {
+  font-size: 14px; }
+  .parallax .content .choose {
+    font-family: 'Archer Bold';
+    font-size: 60px;
+    color: #e61616; }
+    @media screen and (max-width: 767px) {
+      .parallax .content .choose {
+        font-size: 34px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .parallax .content .choose {
+        font-size: 45px; } }
+
+.modal .modal-body .couponCode {
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 12px; }
+
 .no-margin {
   margin: 0; }
 
@@ -8860,6 +8878,26 @@ header .navbar {
         header .navbar .navbar-brand img {
           width: 130px;
           height: 80px; } }
+  header .navbar .sub-brand {
+    position: absolute;
+    bottom: 12px;
+    margin-left: -40px;
+    font-family: 'Archer Pro Ital';
+    font-size: 18px;
+    color: white;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    header .navbar .sub-brand:hover, header .navbar .sub-brand:active, header .navbar .sub-brand:focus {
+      color: #cc0000;
+      text-decoration: none; }
+    @media screen and (max-width: 767px) {
+      header .navbar .sub-brand {
+        bottom: 0;
+        margin-left: -30px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      header .navbar .sub-brand {
+        bottom: 8px;
+        margin-left: -30px; } }
   header .navbar .icon-bar {
     background-color: black; }
     @media screen and (max-width: 767px) {
@@ -8969,6 +9007,26 @@ header .navbar {
       .affix .navbar .navbar-brand img {
         width: 130px;
         height: 80px; } }
+  .affix .navbar .sub-brand {
+    position: absolute;
+    bottom: 12px;
+    margin-left: -40px;
+    font-family: 'Archer Pro Ital';
+    font-size: 18px;
+    color: #cc0000;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .affix .navbar .sub-brand:hover, .affix .navbar .sub-brand:active, .affix .navbar .sub-brand:focus {
+      color: #cc0000;
+      text-decoration: none; }
+    @media screen and (max-width: 767px) {
+      .affix .navbar .sub-brand {
+        bottom: 0;
+        margin-left: -30px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .affix .navbar .sub-brand {
+        bottom: 8px;
+        margin-left: -30px; } }
   @media screen and (max-width: 767px) {
     .affix .navbar .icon-bar {
       background-color: black; } }
@@ -9211,6 +9269,28 @@ footer.bot {
     background-color: #335894;
     color: white; }
 
+.coupon {
+  padding: 8px 30px;
+  background-color: #CF4E2D;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: white; }
+  .coupon:hover, .coupon:active, .coupon:focus {
+    background-color: #AC452C;
+    color: white; }
+
+.getCoupon {
+  margin-top: 10px;
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  font-family: 'Archer Book Pro';
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+  .getCoupon:hover, .getCoupon:active, .getCoupon:focus {
+    background-color: #A00505;
+    color: white; }
+
 .home-banner {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent)), url("../img/stopala-u-travi.jpg");
@@ -9378,6 +9458,8 @@ footer.bot {
             line-height: 40px; } }
         .home-people-say .owl-carousel .owl-stage-outer .owl-item .review .from p {
           font-size: 16px; }
+        .home-people-say .owl-carousel .owl-stage-outer .owl-item .review .from .date {
+          margin-top: -30px; }
         .home-people-say .owl-carousel .owl-stage-outer .owl-item .review .fa-quote-left {
           position: relative;
           top: -20px;
@@ -9493,35 +9575,5 @@ footer.bot {
       border: none; }
       .modal .modal-content .modal-header img {
         height: 30px; }
-    .modal .modal-content .modal-body .save {
-      font-weight: 700; }
-      @media screen and (max-width: 767px) {
-        .modal .modal-content .modal-body .save {
-          font-size: 24px; } }
-    .modal .modal-content .modal-body .content-top {
-      margin-bottom: 0; }
-      @media screen and (max-width: 767px) {
-        .modal .modal-content .modal-body .content-top {
-          font-size: 12px; } }
-    .modal .modal-content .modal-body .content-bot-1 {
-      margin-bottom: 0; }
-      @media screen and (max-width: 767px) {
-        .modal .modal-content .modal-body .content-bot-1 {
-          font-size: 12px; } }
-    .modal .modal-content .modal-body .content-bot-2 {
-      margin-bottom: 20px; }
-      @media screen and (max-width: 767px) {
-        .modal .modal-content .modal-body .content-bot-2 {
-          font-size: 12px; } }
-    .modal .modal-content .modal-body img {
-      width: 100%;
-      height: 80%; }
-      @media screen and (max-width: 767px) {
-        .modal .modal-content .modal-body img {
-          height: 200px; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .modal .modal-content .modal-body img {
-          height: 230px; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .modal .modal-content .modal-body img {
-          height: 250px; } }
+    .modal .modal-content .modal-body .emailCoupon {
+      border-radius: 5px; }

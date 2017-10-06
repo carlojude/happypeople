@@ -31,7 +31,6 @@
     margin: 10px 0;
     font-size: 14px;
     font-weight: 700;
-    // font-family: 'Archer-Book-Pro';
     @include respond-to("screen-xs") {
         font-size: 13px;
     }
@@ -43,4 +42,31 @@
 
 .content {
     font-size: 14px;
+}
+
+.parallax {
+    .content {
+        font-size: 14px;
+        .choose {
+            font-family: 'Archer Bold';
+            font-size: 60px;
+            color: #e61616;
+            @include respond-to("screen-xs") {
+                font-size: 34px;
+            }
+            @include respond-to("screen-sm") {
+                font-size: 45px;
+            }
+        }
+    }
+}
+
+.modal {
+    .modal-body {
+        .couponCode {
+            margin-left: 5px;
+            font-style: italic;
+            font-size: 12px;
+        }
+    }
 }

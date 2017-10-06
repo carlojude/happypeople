@@ -38,6 +38,27 @@ header {
                 }
             }
         }
+        .sub-brand {
+            position: absolute;
+            bottom: 12px;
+            margin-left: -40px;
+            font-family: 'Archer Pro Ital';
+            font-size: 18px;
+            color: white;
+            @include transition(0.3s);
+            @include on-event {
+                color: #cc0000;
+                text-decoration: none;
+            }
+            @include respond-to("screen-xs") {
+                bottom: 0;
+                margin-left: -30px;
+            }
+            @include respond-to("screen-sm") {
+                bottom: 8px;
+                margin-left: -30px;
+            }
+        }
         .icon-bar {
             background-color: black;
             @include respond-to("screen-xs") {
@@ -159,6 +180,27 @@ header {
                     width: 130px;
                     height: 80px;
                 }
+            }
+        }
+        .sub-brand {
+            position: absolute;
+            bottom: 12px;
+            margin-left: -40px;
+            font-family: 'Archer Pro Ital';
+            font-size: 18px;
+            color: #cc0000;
+            @include transition(0.3s);
+            @include on-event {
+                color: #cc0000;
+                text-decoration: none;
+            }
+            @include respond-to("screen-xs") {
+                bottom: 0;
+                margin-left: -30px;
+            }
+            @include respond-to("screen-sm") {
+                bottom: 8px;
+                margin-left: -30px;
             }
         }
         .icon-bar {

@@ -76,12 +76,12 @@ AppName.Modules.ThemeModule = (function() {
         });
     };
 
-    var offer = function() {
-        $(window).load(function() {
-            var showModal = $('.modal').modal('show');
-            setTimeout(showModal, 5000);
-        });
-    }
+    // var offer = function() {
+    //     $(window).load(function() {
+    //         var showModal = $('.modal').modal('show');
+    //         setTimeout(showModal, 5000);
+    //     });
+    // }
 
     var fadeEffects = function() {
         if ($(window).width() < 768) {
@@ -111,7 +111,7 @@ AppName.Modules.ThemeModule = (function() {
     ///////////////////
     var init = function() {
         owlCarouselBottom();
-        offer();
+        // coupon();
         fadeEffects();
         scrollToDiv();
     };

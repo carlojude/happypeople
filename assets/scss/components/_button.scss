@@ -45,3 +45,27 @@
         color: white;
     }
 }
+
+.coupon {
+    padding: 8px 30px;
+    background-color: #CF4E2D;
+    @include transition( 0.3s ease-in-out);
+    color: white;
+    @include on-event {
+        background-color: #AC452C;
+        color: white;
+    }
+}
+
+.getCoupon {
+    margin-top: 10px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    font-family: 'Archer Book Pro';
+    @include transition( 0.2s ease-in-out);
+    @include on-event {
+        background-color: #A00505;
+        color: white;
+    }
+}
