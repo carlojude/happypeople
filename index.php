@@ -179,12 +179,12 @@
                 </div>
                 <div class="modal-body">
                     <form method="POST" id="couponForm">
-                    <div class="input-group">
-                        <input class="form-control emailCoupon" type="email" name="couponEmail" id="couponEmail" placeholder="Email">
-                        <input class="hidden" type="text" name="coupon" id="coupon" value="123">
-                        <p class="couponCode">Coupon code will be sent through your email.</p>
-                    </div>
-                    <input type="submit" class="btn form-control getCoupon" id="couponBtn" name="getCoupon" value="Get a Coupon">
+                        <div class="input-group">
+                            <input class="form-control emailCoupon" type="email" name="couponEmail" id="couponEmail" placeholder="Email">
+                            <input class="hidden" type="text" name="coupon" id="coupon" value="123">
+                            <p class="couponCode">Coupon code will be sent through your email.</p>
+                        </div>
+                        <input type="submit" class="btn form-control getCoupon" id="couponBtn" name="getCoupon" value="Get a Coupon">
                     </form>
                 </div>
             </div>

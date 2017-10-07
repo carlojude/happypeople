@@ -178,12 +178,14 @@
                     <img src="assets/img/400dpiLogoCropped.png" alt="">
                 </div>
                 <div class="modal-body">
-                    <div class="input-group">
-                        <input class="form-control emailCoupon" type="email" name="email" id="couponEmail" placeholder="Email">
-                        <input class="hidden" type="text" name="coupon" id="coupon" value="123">
-                        <p class="couponCode">Coupon code will be sent through your email.</p>
-                    </div>
-                    <input type="submit" class="btn form-control getCoupon" id="couponBtn" name="getCoupon" value="Get a Coupon">
+                    <form method="POST" id="couponForm">
+                        <div class="input-group">
+                            <input class="form-control emailCoupon" type="email" name="couponEmail" id="couponEmail" placeholder="Email">
+                            <input class="hidden" type="text" name="coupon" id="coupon" value="123">
+                            <p class="couponCode">Coupon code will be sent through your email.</p>
+                        </div>
+                        <input type="submit" class="btn form-control getCoupon" id="couponBtn" name="getCoupon" value="Get a Coupon">
+                    </form>
                 </div>
             </div>
         </div>
