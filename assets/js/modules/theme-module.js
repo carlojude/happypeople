@@ -106,6 +106,37 @@ AppName.Modules.ThemeModule = (function() {
         });
     }
 
+    var sendMail = function() {
+        var i = 0;
+
+        $("#couponForm").submit(function() {
+            var email = $("#couponEmail").val();
+            var coupon = $("#coupon").val();
+            var dataString = 'couponEmail=' + email + '&coupon=' + coupon;
+
+            $.ajax({
+                type: "POST",
+                url: "sendMail.php",
+                data: dataString,
+                beforeSend: function() {
+                    $('#couponBtn').val("Sending..");
+                },
+                success: function() {
+
+                },
+                complete: function() {
+                    $('#couponBtn').val("Coupon has been successfully sent to your email.");
+                    $('#couponBtn').attr('disabled', true);
+                    $('#couponBtn').css({
+                        "background-color": "#1fb731"
+                    });
+                }
+            });
+
+            return false;
+        });
+    }
+
     /////////////////////
     // Public Methods //
     ///////////////////
@@ -114,6 +145,7 @@ AppName.Modules.ThemeModule = (function() {
         // coupon();
         fadeEffects();
         scrollToDiv();
+        sendMail();
     };
 
     var resize = function() {
