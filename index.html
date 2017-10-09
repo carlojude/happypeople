@@ -160,7 +160,7 @@
                                         <p>Happy people CLIP ON Mosquito Bug Repellent. All 100% Natural Ingredients NO Skin Contact. The Best Option to Protect Your Kids from Bug Bites, Lasts up to 1,400hr. Perfect for both Babies and Adults.</p>
                                         <div class="btn-holder text-center hidden-sm">
                                             <a class="btn form-control order" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.amazon.com%2Fgp%2Faw%2Fd%2FB072DS42WN%2Fref%3Dmp_s_a_1_1_a_it%3Fie%3DUTF8%26qid%3D1506504765%26sr%3D8-1%26keywords%3Dhappy%2520people%2520smiler%26dpPl%3D1%26dpID%3D41vzWsr-KGL%26ref%3DplSrch&h=ATPa0A5xsdHOi_1kHPwr5_OiBfyKdDgoG5c98BdZqalqpanPOCzASYD4CLNXFitqEqhkJXCEUZXxTHPQARpeWs2MRkdAl9flvfob2PBQBy9JYJFLWK8wfo_vG-_fwvm9VfsDlQzUNko">Buy now</a>
-                                            <a class="btn form-control coupon" href="#" data-toggle="modal" data-target="#myModal" role="button">Get a coupon</a>
+                                            <a class="btn form-control coupon" href="#" data-toggle="modal" data-target="#myModal" role="button" disabled="disabled">Get a coupon</a>
                                         </div>
                                     </div>
                                 </div>
@@ -196,7 +196,7 @@
                             <input class="hidden" type="text" name="coupon" id="coupon" value="123">
                             <p class="couponCode">Coupon code will be sent through your email.</p>
                         </div>
-                        <input type="submit" class="btn form-control getCoupon" id="couponBtn" name="getCoupon" value="Get a Coupon">
+                        <input type="submit" class="btn form-control getCoupon" id="couponBtn" name="getCoupon" value="Get a Coupon" disabled="disabled">
                     </form>
                 </div>
             </div>

@@ -57,6 +57,9 @@
         background-color: #AC452C;
         color: white;
     }
+    &.form-control[disabled] {
+        background-color: #8D8D8D;
+    }
 }
 
 .getCoupon {

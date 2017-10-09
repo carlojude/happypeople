@@ -9280,6 +9280,8 @@ footer.bot {
   .coupon:hover, .coupon:active, .coupon:focus {
     background-color: #AC452C;
     color: white; }
+  .coupon.form-control[disabled] {
+    background-color: #8D8D8D; }
 
 .getCoupon {
   margin-top: 10px;
