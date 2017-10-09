@@ -9227,6 +9227,7 @@ footer.bot {
 
 .order {
   padding: 8px 30px;
+  max-width: 150px;
   background-color: #3d67af;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -9271,6 +9272,7 @@ footer.bot {
 
 .coupon {
   padding: 8px 30px;
+  max-width: 150px;
   background-color: #CF4E2D;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -9519,7 +9521,7 @@ footer.bot {
     border-top: 2px solid white; }
     .home-thumbnails .row .img-holder img {
       width: 100%;
-      height: 200px; }
+      height: 250px; }
       @media screen and (max-width: 767px) {
         .home-thumbnails .row .img-holder img {
           height: 300px; } }
@@ -9536,6 +9538,7 @@ footer.bot {
       top: 0;
       height: 100%;
       padding: 0 15px;
+      z-index: 999;
       background-color: rgba(0, 0, 0, 0.7);
       color: white;
       -webkit-transition: 0.5s ease-in-out;
@@ -9546,6 +9549,9 @@ footer.bot {
         @media screen and (max-width: 767px) {
           .home-thumbnails .thumbnails .img-holder .thumbnail-overlay p {
             font-size: 14px; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .home-thumbnails .thumbnails .img-holder .thumbnail-overlay p {
+            line-height: 18px; } }
         .home-thumbnails .thumbnails .img-holder .thumbnail-overlay p.inner-title {
           font-size: 14px; }
           @media screen and (max-width: 767px) {

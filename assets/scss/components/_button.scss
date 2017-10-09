@@ -1,5 +1,6 @@
 .order {
     padding: 8px 30px;
+    max-width: 150px;
     background-color: #3d67af;
     transition: 0.3s ease-in-out;
     color: white;
@@ -48,6 +49,7 @@
 
 .coupon {
     padding: 8px 30px;
+    max-width: 150px;
     background-color: #CF4E2D;
     @include transition( 0.3s ease-in-out);
     color: white;
